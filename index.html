@@ -15,148 +15,149 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <style>
     html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  /* Enhanced Button and Link Effects */
-  .link, button {
-    transition: color 0.3s, background-color 0.3s, transform 0.3s;
-  }
 
-  .link:hover, button:hover {
-    transform: scale(1.05);
-  }
+.link, button {
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
 
-  button {
-    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
-  }
+.link:hover, button:hover {
+  transform: scale(1.05);
+}
 
-  /* Scroll-Reveal Enhancements */
-  .scroll-reveal h2, .scroll-reveal p {
-    visibility: hidden; /* Initially hide text */
-  }
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-    }
+button {
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+}
 
-    .page1 {
+
+.scroll-reveal h2, .scroll-reveal p {
+  visibility: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page1 {
   background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("baby.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center; 
+  align-items: center; 
   min-height: 100vh;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
 
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 0;
-    }
+.link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-    .link {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #FFF;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .title h1 {
-      color: white;
-      font-size: 60px;
-      font-weight: 700;
-      text-align: center;
-      margin: auto;
-    }
-
-    .about {
-      background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url("about.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .about img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .about-text {
-      max-width: 800px;
-      margin: 20px auto;
-    }
-
-    .about-text h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      color: #E91E63;
-    }
-
-    .about-text h5 {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #bbb;
-    }
-
-    .about-text p {
-      font-size: 16px;
-      line-height: 1.6;
-      color: #ddd;
-    }
-    .logos h2{
-      text-align: center;
-      color: #333; /* Change to your preferred text color */
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Horizontal shadow, Vertical shadow, Blur radius, Color */
-  font-size: 24px; /* Adjust based on your design */
-  font-weight: bold; /* Makes the text bold */
-    }
-
-    button {
-      background: #E91E63;
-      color: white;
-      padding: 10px 30px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background: #C2185B;
-    }
-
-    
+.title h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
 
 
+.title h3 {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin: auto;
+}
 
+.about {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("minikwab.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 20px;
+  text-align: center;
+}
 
-    @media (max-width: 768px) {
-      .title h1 {
-        font-size: 40px;
-      }
+.about-text {
+  max-width: 800px;
+  margin: 20px auto;
+}
 
-      .about-text h1 {
-        font-size: 36px;
-      }
+.about-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: white;
+}
 
-      .about-text, .link {
-        padding: 0 10px;
-      }
-    }
-    @keyframes slide{
+.about-text h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.about-text p {
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.logos h2 {
+  text-align: center;
+  color: #333; 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+button {
+  background: black;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: black;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .about-text h1 {
+    font-size: 36px;
+  }
+
+  .about-text, .link {
+    padding: 0 10px;
+  }
+}
+
+@keyframes slide {
   from {
     transform: translateX(0);
   }
@@ -165,47 +166,104 @@
   }
 }
 
-    .logos{
-      overflow: hidden;
-      padding:60px 0;
-      background: white;
-      white-space: nowrap;
-      position: relative;
-    }
-    .logos::before{
-      position: absolute;
-      top:0;
-      left:0;
-      width:250px;
-      height:100%;
-      background:linear-gradient(to right,rgba(255,255,255,0),white);
-      content:""; 
-      z-index: 2;
-    }
-    .logos::after{
-      position: absolute;
-      top:0;
-      right:0;
-      width:250px;
-      height:100%;
-      background:linear-gradient(to left,rgba(255,255,255,0),white);
-      content:""; 
-      z-index: 2;
-    }
-    .logos:hover .logos-slide{
-      animation-play-state:paused;
-    }
-    .logos-slide{ 
-      display: inline-block;
-      animation: 3s slide infinite linear;
-      
-    
-    }
-    .logos-slide img{
-     
-      height:100px;
-      margin:0 40px;
-    }
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0), white);
+  content: ""; 
+  z-index: 2;
+}
+
+.logos::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0), white);
+  content: ""; 
+  z-index: 2;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide { 
+  display: inline-block;
+  animation: 3s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.project {
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+#project1 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("spot.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project2 {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url("heart.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  color: white;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project a:hover {
+  background: black;
+}
+
   </style>
 </head>
 <body>
@@ -218,15 +276,19 @@
     </div>
     <div class="title">
       <h1>Kwabena Ampomah</h1>
+      <h3> Aspiring Philly Software Developer </h3>
     </div>
   </div>
-  <div class="about" id="About">
-    <img src="face.png" alt="About Me">
-    <div class="about-text">
-      <h1>About Me</h1>
-      <h5>Software Developer</h5>
-      <p>I'm an aspiring Software Developer. Proficient in HTML, CSS, Java, Python. I love creating front-end websites that are both visually appealing and user-friendly.</p>
-      <button type="button">Let's Talk</button>
+  <div class="projects" id="Projects">
+    <div class="project" id="project1">
+      <h3>SpotifyWrapped 24/7</h3>
+      <p> I wanted to see my spotfiy wrapped but couldnt wait a year</p>
+      <a href="https://github.com/Kwabena-Ampomah/top5spotify" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project" id="project2">
+      <h3>HeartAttack predictor</h3>
+      <p>I have created a Heart Attack Predictor utilizing Python's machine learning capabilities.</p>
+      <a href="https://github.com/Kwabena-Ampomah/HeartAttackpredictor" target="_blank">View on GitHub</a>
     </div>
   </div>
     <div class="logos">

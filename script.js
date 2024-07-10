@@ -66,13 +66,13 @@ window.addEventListener('scroll', function() {
     var parallaxContainer = document.querySelector('.about');
     var parallaxImage = document.querySelector('.parallax-image');
   
-    // Calculate offset of the .about section from the top of the page
+   
     var sectionTop = parallaxContainer.offsetTop;
   
-    // Calculate parallax only when the .about section is in the viewport
+    
     if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + parallaxContainer.offsetHeight) {
-      var parallaxSpeed = 0.3; // Adjust based on the desired effect
-      // Ensure the image moves only within the bounds of the .about section
+      var parallaxSpeed = 0.3;
+     
       var imageOffset = (scrollPosition - sectionTop) * parallaxSpeed;
       parallaxImage.style.transform = `translateY(${imageOffset}px)`;
     }
